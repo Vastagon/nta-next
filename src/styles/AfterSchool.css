@@ -111,12 +111,19 @@
 .temp-right-image{
     border-radius: 20px;
     max-width: 35%;
+    width: 35%;
+    height: auto;
 }
 
 .after-school-card:nth-child(odd){
     /* text-align: end; */
     padding-left: 0;
+    padding-right: 3rem;
 }
 .after-school-card:nth-child(odd) .left-card{
     padding-left: 4rem;
+    padding-right: 0;
+}
+.left-card:nth-child(odd){
+
 }

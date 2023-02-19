@@ -1,3 +1,6 @@
+import Image from 'next/image';
+
+
 type FooterProps = {
     // clickScrollTo: (position: string) => {}
     clickScrollTo: any
@@ -7,7 +10,7 @@ export default function Footer(props: FooterProps){
 
     return(
         <footer className="nav-close" id="footer">
-            <img alt="NTA Taekwondo Logo" className="footer-icon footer-segment" src={require("../images/NTALogo.webp")} />
+            <Image alt="NTA Taekwondo Logo" className="footer-icon footer-segment" src={require("../images/NTALogo.webp")} />
             <div className="quick-links footer-segment">
                 <h2>Quick Links</h2>
 
@@ -25,7 +28,10 @@ export default function Footer(props: FooterProps){
                     <div>3000 Grapevine Mills Pkwy, Grapevine, Texas</div>
                     <div>ntataekwondo@gmail.com</div>
                     <div>(972) 532-3400</div>
-                    <img alt="Facebook Taekwondo Logo" onClick={() => {window.open("https://www.facebook.com/groups/403731716464076", "_blank")}} className='facebook-icon' src="https://louisville.edu/english/images/facebookicon.png/image" />
+                    <Image alt="Facebook Taekwondo Logo" onClick={() => {window.open("https://www.facebook.com/groups/403731716464076", "_blank")}} 
+                    className='facebook-icon' src="https://louisville.edu/english/images/facebookicon.png/image" 
+                    width={10} height={10}
+                    />
                 </div>
             </div>
         </footer>

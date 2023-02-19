@@ -55,7 +55,7 @@
   border-style: solid;
   border-color: var(--scheme-gray);
 }
-.programs-card > img{
+.programs-card-image{
   width: 100%;
   height: 50%;
   border-radius: 20px;

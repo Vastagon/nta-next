@@ -1,9 +1,10 @@
+import Image from 'next/image';
 
 
 export default function AfterSchool(){
     return(
         <div className="after-school nav-close">
-            {/* <img src={require("../images/NTALogo.webp")} /> */}
+            {/* <Image src={require("../images/NTALogo.webp")} /> */}
             <div className="overview">
                 <h2>Overview</h2>
                 <p>The NTA Taekwondo Center has classes oriented for both children and adults. The energetic atmosphere of our programs and our 
@@ -21,12 +22,12 @@ export default function AfterSchool(){
                     until you&apos;re doing high repetition workouts without much problem. By that point, you&apos;ll have probably lost
                     some weight.</p>                    
                 </div>
-                <img alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/smallFamilyFriendly.jpg")} />
+                <Image alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/smallFamilyFriendly.jpg")} />
             </div>
 
             {/* Card 2 */}
             <div className="after-school-card">
-                <img alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/sparring.jpg")} />
+                <Image alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/sparring.jpg")} />
                 <div className="left-card">
                     <h1>Discipline</h1>
                     <p>In Taekwondo, students are taught the values and benefits of hard work and Discipline. No matter what aspect of Taekwondo
@@ -45,12 +46,12 @@ export default function AfterSchool(){
                     night of homework that may come afterwards. Being able to focus on the workout allows students to take their minds off off
                     school or whatever else might be troubling them.</p>                  
                 </div>
-                <img alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/martial-arts-age.webp")} />
+                <Image alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/martial-arts-age.webp")} />
             </div>
 
             {/* Card 4 */}
             <div className="after-school-card">
-                <img alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/fallingkick.jpg")} />
+                <Image alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/fallingkick.jpg")} />
                 <div className="left-card">
                     <h1>Self Defense</h1>
                     <p>The best form of self defense is learning how to avoid the fight. At NTA students learn how to assess situations
@@ -69,7 +70,7 @@ export default function AfterSchool(){
                     to spar while learning from it without injuries. Learning how to work with partners and building that trust in each other
                     lets both memebers work towards their goals together, letting everyone succeed.</p>                  
                 </div>
-                <img alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/handshake.jpg")} />
+                <Image alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/handshake.jpg")} />
             </div>
             <div id="programsScroll" />
         </div>

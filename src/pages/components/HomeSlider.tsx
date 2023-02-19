@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Image from 'next/image';
 
 type HomeSliderProps = {
     imageArray: any
@@ -60,13 +61,13 @@ export default function HomeSlider(props: HomeSliderProps){
         {isAnimationRunning ? 
             <div className="slider">
                 <div id="slider-left-arrow" className="slider-left-arrow slider-arrow"></div>
-                    <img id="home-slider-image" className="slider-image-initial" alt="Taekwondo Image Slider" src={props.imageArray[imageArrayPosition]} />
+                    <Image id="home-slider-image" className="slider-image-initial" alt="Taekwondo Image Slider" src={props.imageArray[imageArrayPosition]} />
                 <div id="slider-right-arrow" className="slider-right-arrow slider-arrow"></div>
             </div>
         :
             <div className="slider">
                 <div id="slider-left-arrow" onClick={() => arrowClicked(-1)} className="slider-left-arrow slider-arrow"></div>
-                    <img id="home-slider-image" className="slider-image-initial" alt="Taekwondo Image Slider" src={props.imageArray[imageArrayPosition]} />
+                    <Image id="home-slider-image" className="slider-image-initial" alt="Taekwondo Image Slider" src={props.imageArray[imageArrayPosition]} />
                 <div id="slider-right-arrow" onClick={() => arrowClicked(1)} className="slider-right-arrow slider-arrow"></div>
             </div>
         }       

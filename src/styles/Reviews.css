@@ -44,7 +44,7 @@
   border-radius: 0px 0px 9px 9px;
 
   margin-left: -1rem;
-  width: calc(100% + 2rem);
+  width: calc(100% + 0rem);
 }
 .reviewer-name > p{
   text-align: end;
