@@ -1,0 +1,259 @@
+@media screen and (max-width: 950px) {
+    /* Reviews */
+    .reviews-container{
+        grid-template-columns: 100%; 
+        margin-top: 0vh;      
+    }
+    .reviews-title{
+        margin-top: 15%;
+    }
+    .card-group{
+        width: 100vw;
+        flex-flow: column nowrap;
+    }
+    .card-title{
+        font-size: 1.8rem;
+    }
+    .card-text{
+        font-size: 1.4rem;
+    }
+    .my-2{
+        width: 80%;
+    }
+
+    .mynav{
+        z-index: 5;
+    }
+    .mobile-nav{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+    }
+    .nav-tab{
+        font-size: 1rem;
+        margin-left: 0rem;
+        margin-top: 10%;
+        opacity: 1;
+        color: white;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .icon{
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+
+
+    /* Schedule */
+    .mobile-schedule{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .schedule-title{
+        margin-top: 15vh !important;
+    }
+    .mobile-schedule-day-container:nth-last-child(1){
+    margin-bottom: 20%;
+    }
+    .mobile-schedule-day-container{
+    text-align: left;
+    padding-bottom: 2rem;
+    background-color: var(--scheme-green);
+    color: white;
+    margin-top: 5%;
+
+    border-radius: 10px;
+    }
+    .mobile-schedule-day-container:nth-child(odd){
+        background-color: var(--nta-green);
+      }
+    /* .mobile-times-grid{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    } */
+
+    
+    .mobile-schedule-day-container > h4{
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px;
+    border-color: white;
+    border-style: solid;
+    margin-bottom: 0;
+    }
+    .mobile-times-grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    }
+    .mobile-times-grid > p{
+    padding-left: 15%;
+    }
+
+
+    /* Footer */
+    footer{
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 12vh;
+    }
+    .footer-icon, .quick-links, .contact-us-footer-grid{
+        text-align: center;
+        left: 0;
+        position: relative;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .contactus-footer{
+        margin-top: 2%;
+    }
+    .quick-links{
+        margin-top: 2%;
+    }
+    .footer-icon{
+        padding-top: 5vh;
+        margin-left: 2%;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .quick-links > div, .contactus-footer{
+        text-align: center;
+    }
+
+
+
+    /* Bottom Nav Form */
+    .bottom-form-submit-button{
+        padding: 1%;
+        margin-top: 20%;
+        width: 50%;
+        margin-left: 0%;
+    }
+    .bottom-nav-form > input{
+        width: 100%;
+        text-align: center;
+    }
+    .bottom-nav-form > label{
+        text-align: center;
+        padding-left: 0;
+        /* margin-top: 3%; */
+    }
+
+
+    /* Afterschool */
+    .overview{
+        width: 80%;
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-right: 0;
+    }
+    .after-school-card{
+        width: 90%;
+        margin-left: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 2rem;
+    }
+    .temp-right-image{
+        max-width: 100%;
+        width: 80%;
+    }
+    .left-card{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .after-school-card:nth-child(odd){
+        padding-left: 0;
+        flex-direction: column-reverse;
+    }
+    .after-school-card:nth-child(odd) .left-card{
+        padding-left: 2rem;
+    }
+
+
+    
+
+    /* Programs */
+    .programs-header{
+        margin-top: 17%;
+    }
+    .programs-card-container{
+        flex-direction: column;
+        width: 90%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .programs-card{
+        width: 100%;
+        font-size: 1rem;
+        height: auto;
+
+        border-top: 2px;
+        border-left: 0px;
+        border-right: 0;
+        border-bottom: 0;
+        border-color: gray;
+        border-style: solid;
+    }
+    .programs-card:nth-child(1){
+        border-style: none;
+    }
+    .programs-card > p{
+        font-size: 1rem;
+    }
+
+
+
+    .contact-us{
+        width: 100vw;
+        font-size: .6rem;
+    }
+    .contactus-card{
+        flex-direction: column;
+        margin-top: 0%;
+    }
+    .contact-info{
+        font-size: .6rem;
+    }
+    .contact-us-form{
+        margin: 0;
+        margin-top: 15%;
+        width: 80%;
+    }
+    .contact-us-form > button{
+        width: 100%;
+        margin: 0;
+        margin-top: 6%;
+    }
+    .contact-us-form > input{
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    .contact-us-form > label{
+        font-size: 1.5rem;
+      }
+    .contact-us-header{
+        margin-top: 20%;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .footer-segment > h2, .contact-us-footer-grid > h2{
+        font-size: 1.6rem;
+    }
+}

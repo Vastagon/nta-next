@@ -1,0 +1,79 @@
+/* Contact Form */
+.contact-us{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2%;
+  gap: 5%;
+}
+.contactus-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: var(--scheme-gray);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  width: 70%;
+}
+.contactus-card > h4{
+  font-size: 1.6rem;
+}
+.contactus-map{
+  width: 99.8%;
+  margin-top: 10%;
+}
+.contact-info > div{
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+.contact-us-form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  width: 60%;
+}
+.contact-us-form > input{
+
+}
+.contact-us-form > label{
+  text-align: left;
+}
+.contact-us-form > button{
+  margin-top: 5%;
+  width: 40%;
+  padding: 1rem;
+
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+.contact-us-header{
+  text-align: center;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+  margin: auto;
+}
+.form-label{
+  margin-top: .5rem;
+}
