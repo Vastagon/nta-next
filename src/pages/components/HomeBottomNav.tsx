@@ -6,10 +6,10 @@ import AcceptedEmail from "./AcceptedEmail"
 
 type BottomNavProps = {
     setShowAcceptedCard: any
-    showAcceptedCard: Boolean
-    showFailedCard: Boolean
+    showAcceptedCard: boolean
+    showFailedCard: boolean
     setShowFailedCard: any
-    showBottomNav: Boolean
+    showBottomNav: boolean
     setShowBottomNav: any
 }
 
@@ -49,7 +49,7 @@ export default function HomeBottomNav(props: BottomNavProps){
 
 
     function toggleBottomNav(){
-        props.setShowBottomNav((prev: Boolean) => !prev)
+        props.setShowBottomNav((prev: boolean) => !prev)
         if(!firstClickBoolean){
             setFirstClickBoolean(true)
         }
@@ -62,6 +62,7 @@ export default function HomeBottomNav(props: BottomNavProps){
             <>
             {/* While open */}
             <div className="open-bottom-nav bottom-nav">
+                {/* eslint-disable-next-line @typescript-eslint/no-empty-function */}
                 <div className="bottom-text-container" onClick={!bottomFormSendingEmail ? toggleBottomNav : () =>{}}>
                     <div className="show-hover" style={{display: "flex"}}>
                         <h4 className="bottom-nav-text">Interested? Sign up for classes</h4>
@@ -85,6 +86,7 @@ export default function HomeBottomNav(props: BottomNavProps){
             :
             // While Closed
             <>
+            {/* eslint-disable-next-line @typescript-eslint/no-empty-function */}
             <div onClick={!bottomFormSendingEmail ? toggleBottomNav : ()=> {}} className={firstClickBoolean ? "slide-down-animation show-hover bottom-nav" : "show-hover bottom-nav"}>
 
                 <div className={firstClickBoolean ? "no-bottom-border bottom-text-container" : "no-bottom-nav-border bottom-text-container"}>

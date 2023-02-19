@@ -30,8 +30,8 @@ export default function Programs(){
                     </div>
                     <div className="programs-card">
                         <Image className="programs-last-image" alt="Card image cap" src={kidsTraining} />
-                        <h4>Children's Classes</h4>
-                        <p>Martial arts aren't all about punching and kicking. At NTA, we  also focus on the personal-development aspects
+                        <h4>Children&apos;s Classes</h4>
+                        <p>Martial arts aren&apos;t all about punching and kicking. At NTA, we  also focus on the personal-development aspects
                         that Taekwondo offers. Things like improving focus, instilling a sense of discipline, getting fit, 
                         and increasing confidence.</p>
                     </div>

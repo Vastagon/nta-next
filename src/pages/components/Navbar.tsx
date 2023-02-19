@@ -21,15 +21,15 @@ export default function Navbar(props: NavbarProps){
         })
     }, [])        
 
-    let openMobileNav = () =>{
+    const openMobileNav = () =>{
         props.setShowMobileNav((prev: boolean) => !prev)
 
         //Hides hamburger nav when slide out animation is playing
         if(!props.showMobileNav){
-            document.getElementById("hamburger-nav")!.classList.add("hidden")
+            document.getElementById("hamburger-nav")?.classList.add("hidden")
 
             setTimeout(() =>{
-                document.getElementById("hamburger-nav")!.classList.remove("hidden")
+                document.getElementById("hamburger-nav")?.classList.remove("hidden")
             }, 1000)
         }
     }
@@ -40,11 +40,6 @@ export default function Navbar(props: NavbarProps){
     return(
         <div className="mynav">
             <Image alt="NTA Taekwondo Logo" onClick={() => props.clickScrollTo("root")} src={NTALogo} className="icon nav-tab" />
-            {/* <h1 style={{
-                color: "white",
-                marginBottom: 0,
-                
-                }}>NTA Taekwondo Academy</h1> */}
 
             {(innerSizes.width <= 950 || innerSizes.height < 425) ? 
             // Mobile Navbar

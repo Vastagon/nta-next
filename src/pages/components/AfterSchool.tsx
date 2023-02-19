@@ -18,7 +18,7 @@ export default function AfterSchool(){
                     <h1>Fitness</h1>
                     <p>Taekwondo allows individuals to increase their overall fitness while performing a lot of different technniques and kicks.
                     It also starts off easy to allow everyone to attend and get more fit. With a slow pace in the beginning, you slowly build your stamina
-                    until you're doing high repetition workouts without much problem. By that point, you'll have probably lost
+                    until you&apos;re doing high repetition workouts without much problem. By that point, you&apos;ll have probably lost
                     some weight.</p>                    
                 </div>
                 <img alt="Taekwondo Family Friendly" className="temp-right-image" src={require("../images/smallFamilyFriendly.jpg")} />
@@ -40,7 +40,7 @@ export default function AfterSchool(){
             <div className="after-school-card">
                 <div className="left-card">
                     <h1>Stress Relief</h1>
-                    <p>Working out has been scientifically proven to reduce an individual's stress. Being able to relieve this stress that
+                    <p>Working out has been scientifically proven to reduce an individual&apos;s stress. Being able to relieve this stress that
                     might get built up from school or work allows them to refresh their minds to be ready for the next day of school or the 
                     night of homework that may come afterwards. Being able to focus on the workout allows students to take their minds off off
                     school or whatever else might be troubling them.</p>                  

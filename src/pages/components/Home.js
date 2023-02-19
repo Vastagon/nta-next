@@ -18,12 +18,12 @@ import demoTeam from "../sliderImages/taekwondoDemoteam2.webp"
 
 
 export default function Home(){
-    const [showMobileNav, setShowMobileNav] = useState<AuthUser | null>(false)
-    const [showBottomNav, setShowBottomNav] = useState<AuthUser | null>(false)
-    const [imageArray, setImageArray] = useState<AuthUser | null>([crossTrainingImage, bigBigImage, demoTeam])
-    const [showPage, setShowPage] = useState<AuthUser | null>(false)
-    const [showFailedCard, setShowFailedCard] = useState<AuthUser | null>(false)
-    const [showAcceptedCard, setShowAcceptedCard] = useState<AuthUser | null>(false)
+    const [showMobileNav, setShowMobileNav] = useState(false)
+    const [showBottomNav, setShowBottomNav] = useState(false)
+    const [imageArray, setImageArray] = useState([crossTrainingImage, bigBigImage, demoTeam])
+    const [showPage, setShowPage] = useState(false)
+    const [showFailedCard, setShowFailedCard] = useState(false)
+    const [showAcceptedCard, setShowAcceptedCard] = useState(false)
 
 
     ///Preload slider images

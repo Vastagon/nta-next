@@ -5,8 +5,8 @@ import Spinner from "./Spinner";
 type ContactUsProps = {
     setShowFailedCard: any
     setShowAcceptedCard: any
-    showFailedCard: Boolean
-    showAcceptedCard: Boolean
+    showFailedCard: boolean
+    showAcceptedCard: boolean
 }
 
 

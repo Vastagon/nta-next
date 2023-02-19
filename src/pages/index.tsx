@@ -30,8 +30,10 @@ export default function Home() {
       ///Preload slider images
       useEffect(() =>{
         function preloadImages(srcs: string | any[]) {
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           if (!preloadImages.cache) {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             preloadImages.cache = [];
           }
@@ -39,6 +41,7 @@ export default function Home() {
           for (let i = 0; i < srcs.length; i++) {
               img = new Image();
               img.src = srcs[i];
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
               // @ts-ignore
               preloadImages.cache.push(img);
           }

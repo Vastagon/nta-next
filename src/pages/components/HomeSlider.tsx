@@ -5,8 +5,8 @@ type HomeSliderProps = {
 }
 
 export default function HomeSlider(props: HomeSliderProps){
-    let [imageArrayPosition, setImageArrayPosition] = useState(0)
-    let [isAnimationRunning, setIsAnimationRunning] = useState(false)
+    const [imageArrayPosition, setImageArrayPosition] = useState(0)
+    const [isAnimationRunning, setIsAnimationRunning] = useState(false)
 
 
     function arrowClicked(moveThroughArray: number){
@@ -15,32 +15,32 @@ export default function HomeSlider(props: HomeSliderProps){
         ///moveThroughArray = 1 or -1 depending on arrow clicked
         if(moveThroughArray === 1){
             ///Right Arrow Clicked
-            document.getElementById("home-slider-image")!.classList.add("image-slide-right")
+            document.getElementById("home-slider-image")?.classList.add("image-slide-right")
 
             setTimeout(() =>{
                 ///End slide off animation and start slide on animation
                 setImageArrayPosition(prev => prev + moveThroughArray)
-                document.getElementById("home-slider-image")!.classList.remove("image-slide-right")
-                document.getElementById("home-slider-image")!.classList.add("image-slide-right-second")
+                document.getElementById("home-slider-image")?.classList.remove("image-slide-right")
+                document.getElementById("home-slider-image")?.classList.add("image-slide-right-second")
                 setIsAnimationRunning(false)
             }, 800)
         }else{
             ///Left Arrow Clicked
-            document.getElementById("home-slider-image")!.classList.add("image-slide-left")
+            document.getElementById("home-slider-image")?.classList.add("image-slide-left")
 
             setTimeout(() =>{
                 ///End slide off animation and start slide on animation
                 setImageArrayPosition(prev => prev + moveThroughArray)
-                document.getElementById("home-slider-image")!.classList.remove("image-slide-left")
-                document.getElementById("home-slider-image")!.classList.add("image-slide-left-second")
+                document.getElementById("home-slider-image")?.classList.remove("image-slide-left")
+                document.getElementById("home-slider-image")?.classList.add("image-slide-left-second")
                 setIsAnimationRunning(false)
             }, 800)
         }
 
         ///Remove class for image slide on animation
         setTimeout(() =>{
-            document.getElementById("home-slider-image")!.classList.remove("image-slide-left-second")
-            document.getElementById("home-slider-image")!.classList.remove("image-slide-right-second")
+            document.getElementById("home-slider-image")?.classList.remove("image-slide-left-second")
+            document.getElementById("home-slider-image")?.classList.remove("image-slide-right-second")
         }, 1600)
 
     } 

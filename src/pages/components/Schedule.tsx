@@ -5,8 +5,8 @@ import MobileSchedule from "./MobileSchedule";
 
 
 export default function Schedule(){
-    const [screenWidth, setScreenWidth] = useState<Number>()
-    const [screenHeight, setScreenHeight] = useState<Number>()
+    const [screenWidth, setScreenWidth] = useState<number>()
+    const [screenHeight, setScreenHeight] = useState<number>()
     const [screenOrientation, setScreenOrientation] = useState<string>()
 
     useEffect(() =>{
