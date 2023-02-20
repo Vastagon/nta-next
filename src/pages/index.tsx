@@ -16,6 +16,13 @@ import demoTeam from "./sliderImages/taekwondoDemoteam2.webp"
 
 import { useState, useEffect } from 'react';
 
+export async function getServerSideProps() {
+  return {
+    props: {
+      
+    }
+  }
+}
 
 export default function Home() {
   const [showMobileNav, setShowMobileNav] = useState(false)
