@@ -1,4 +1,4 @@
-import "../../styles/App.css"
+
 
 export default function ErrorPage(){
     return(

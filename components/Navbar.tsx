@@ -12,10 +12,11 @@ type NavbarProps = {
 }
 
 export default function Navbar(props: NavbarProps){
-    const [innerSizes, setInnerSizes] = useState({height: window.innerHeight, width: window.innerWidth})
+    const [innerSizes, setInnerSizes] = useState({height: 0, width: 0})
 
     useEffect(() =>{
         ///Adding event listener for resizing
+        setInnerSizes({height: window.innerHeight, width: window.innerWidth})
         window.addEventListener("resize", () =>{
             setInnerSizes({height: window.innerHeight, width: window.innerWidth})
         })
