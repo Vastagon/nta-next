@@ -1,5 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
+
+export async function getServerSideProps() {
+  return { props: {} }
+}
+
+
 export default function Document() {
   return (
     <Html lang="en">
@@ -17,12 +23,10 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.gstatic.com" /> 
         <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Nunito:ital@0;1&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 
-        <title>NTA Taekwondo</title>
         <meta name="description" content="The NTA Taekwondo Center has classes oriented for both children and adults. The energetic atmosphere of our programs and our personal 
         approach to teaching are designed to give students the necessary tools to become better people through martial arts.  Whether you are 
         interested in Taekwondo as an exercise program or are a national-level athlete who wants to train for competition,
         NTA Taekwondo Center has classes to help meet your goals!" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>      
       <body>
         <Main />

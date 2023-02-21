@@ -29,7 +29,7 @@ export default function HomeBottomNav(props: BottomNavProps){
         e.preventDefault()
         ///Uses emailjs to send email
         setBottomFormSendingEmail(true)
-        emailjs.send(process.env.REACT_APP_SERVICE_ID!, process.env.REACT_APP_TEMPLATE_ID!, bottomFormInfo, process.env.REACT_APP_PUBLIC_KEY!)
+        emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID!, process.env.NEXT_PUBLIC_TEMPLATE_ID!, bottomFormInfo, process.env.NEXT_PUBLIC_PUBLIC_KEY!)
         .then((response) => {
             console.log('SUCCESS!', response.status, response.text);
             setBottomFormSendingEmail(false)

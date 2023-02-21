@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Footer from "../../components/Footer";
 import HomeSlider from "../../components/HomeSlider";
 import WebsiteNavbar from "../../components/Navbar";
@@ -10,21 +11,28 @@ import ContactUs from "../../components/ContactUs"
 import MobileNav from "../../components/MobileNav";
 import LoadingPage from "../../components/LoadingPage";
 
-import crossTrainingImage from "./sliderImages/taekwondoCrosstraining.webp"
-import bigBigImage from "./sliderImages/bigTaekwondoTraining.jpg"
-import demoTeam from "./sliderImages/taekwondoDemoteam2.webp"
+import crossTrainingImage from "./(sliderImages)/taekwondoCrosstraining.webp"
+import bigBigImage from "./(sliderImages)/bigTaekwondoTraining.jpg"
+import demoTeam from "./(sliderImages)/taekwondoDemoteam2.webp"
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Key, JSXElementConstructor, ReactElement, ReactFragment, ReactPortal } from 'react';
 
 export async function getServerSideProps() {
-  return {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos")
+  const data = await res.json()
+  return { 
     props: {
-      
-    }
+      data: data
+    } 
   }
 }
 
-export default function Home() {
+type homeProps = {
+  data: any
+}
+
+
+export default function Home(props: homeProps) {
   const [showMobileNav, setShowMobileNav] = useState(false)
   const [showBottomNav, setShowBottomNav] = useState(false)
   const [imageArray, setImageArray] = useState([crossTrainingImage, bigBigImage, demoTeam])
